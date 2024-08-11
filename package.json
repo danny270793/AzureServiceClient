@@ -22,5 +22,8 @@
     "type": "git",
     "url": "git+https://github.com/danny270793/AzureServicesClient.git"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^5.5.4"
+  }
 }
