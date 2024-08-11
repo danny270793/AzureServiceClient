@@ -37,10 +37,10 @@ const azureClientId: string = process.env.AZURE_CLIENT_ID
 const azureClientSecret: string = process.env.AZURE_CLIENT_SECRET
 
 const azure: Azure = new Azure(
-  azureSubscriptionId,
-  azureTenantId,
-  azureClientId,
-  azureClientSecret,
+    azureSubscriptionId,
+    azureTenantId,
+    azureClientId,
+    azureClientSecret,
 )
 
 const resourceGroups: ResourceGroup[] = await azure.getResourceGroups()
