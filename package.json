@@ -3,9 +3,9 @@
     "version": "1.0.0",
     "description": "Library to interact con azure services",
     "main": "./build/index.js",
-    "types": "build/index.d.ts",
+    "types": "./build/index.d.ts",
     "files": [
-        "build/**/*"
+        "./build/src/**/*"
     ],
     "scripts": {
         "format": "prettier ./ --write",
