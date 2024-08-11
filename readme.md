@@ -1,4 +1,4 @@
-# Azure Service Client
+# Azure Services Client
 
 [![Github pipeline status](https://github.com/danny270793/AzureServiceClient/actions/workflows/releaser.yaml/badge.svg)](https://github.com/danny270793/AzureServiceClient/actions/workflows/releaser.yaml)
 ![NPM Type Definitions](https://img.shields.io/npm/types/@danny270793/azureservicesclient)
