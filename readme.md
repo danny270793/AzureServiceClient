@@ -1,16 +1,16 @@
 # Azure Service Client
 
 [![Github pipeline status](https://github.com/danny270793/AzureServiceClient/actions/workflows/releaser.yaml/badge.svg)](https://github.com/danny270793/AzureServiceClient/actions/workflows/releaser.yaml)
-![NPM Type Definitions](https://img.shields.io/npm/types/@danny270793/AzureServiceClient)
+![NPM Type Definitions](https://img.shields.io/npm/types/@danny270793/azureservicesclient)
 
-[![install size](https://packagephobia.com/badge?p=@danny270793/AzureServiceClient)](https://packagephobia.com/result?p=@danny270793/AzureServiceClient)
-![NPM Unpacked Size](https://img.shields.io/npm/unpacked-size/@danny270793/AzureServiceClient)
+[![install size](https://packagephobia.com/badge?p=@danny270793/AzureServiceClient)](https://packagephobia.com/result?p=@danny270793/azureservicesclient)
+![NPM Unpacked Size](https://img.shields.io/npm/unpacked-size/@danny270793/azureservicesclient)
 ![GitHub repo size](https://img.shields.io/github/repo-size/danny270793/AzureServiceClient)
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/danny270793/AzureServiceClient)
-![npm bundle size (scoped)](https://img.shields.io/bundlephobia/min/@danny270793/AzureServiceClient)
+![npm bundle size (scoped)](https://img.shields.io/bundlephobia/min/@danny270793/azureservicesclient)
 
 ![GitHub commit activity](https://img.shields.io/github/commit-activity/m/danny270793/AzureServiceClient)
-![NPM Downloads](https://img.shields.io/npm/dy/@danny270793/AzureServiceClient)
+![NPM Downloads](https://img.shields.io/npm/dy/@danny270793/azureservicesclient)
 ![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/danny270793/AzureServiceClient/total)
 
 Library to access to azure resources information
@@ -20,7 +20,7 @@ Library to access to azure resources information
 Install package from public registry
 
 ```bash
-npm install @danny270793/AzureServiceClient
+npm install @danny270793/azureservicesclient
 ```
 
 ## Examples
@@ -28,8 +28,8 @@ npm install @danny270793/AzureServiceClient
 List resource groups on a supscription scoped by client id and client secret
 
 ```ts
-import { Azure } from '@danny270793/AzureServiceClient'
-import ResourceGroup from '@danny270793/AzureServiceClient/src/responses/resource-group'
+import { Azure } from '@danny270793/azureservicesclient'
+import ResourceGroup from '@danny270793/azureservicesclient/src/responses/resource-group'
 
 const azureSubscriptionId: string = process.env.AZURE_SUBSCRIPTION_ID
 const azureTenantId: string = process.env.AZURE_TENANT_ID
@@ -62,6 +62,6 @@ console.log(resourceGroups)
 ![GitHub Tag](https://img.shields.io/github/v/tag/danny270793/AzureServiceClient)
 ![GitHub Release](https://img.shields.io/github/v/release/danny270793/AzureServiceClient)
 ![GitHub package.json version](https://img.shields.io/github/package-json/v/danny270793/AzureServiceClient)
-![NPM Version](https://img.shields.io/npm/v/@danny270793/AzureServiceClient)
+![NPM Version](https://img.shields.io/npm/v/@danny270793/azureservicesclient)
 
 Last update 11/08/2024
