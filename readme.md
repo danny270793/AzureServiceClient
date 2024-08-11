@@ -29,7 +29,7 @@ List resource groups on a supscription scoped by client id and client secret
 
 ```ts
 import { Azure } from '@danny270793/azureservicesclient'
-import { ResourceGroup } from '@danny270793/azureservicesclient/responses'
+import { ResourceGroup } from '@danny270793/azureservicesclient/build/responses'
 
 const azureSubscriptionId: string = process.env.AZURE_SUBSCRIPTION_ID
 const azureTenantId: string = process.env.AZURE_TENANT_ID
