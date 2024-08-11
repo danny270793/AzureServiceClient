@@ -1,11 +1,11 @@
 {
     "name": "@danny270793/azureservicesclient",
-    "version": "1.0.4",
+    "version": "1.0.5",
     "description": "Library to interact con azure services",
     "main": "./build/index.js",
     "types": "./build/index.d.ts",
     "files": [
-        "./build/src/**/*"
+        "./build/**/*"
     ],
     "scripts": {
         "format": "prettier ./ --write",
