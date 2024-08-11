@@ -23,7 +23,6 @@ export default {
         if (duration === Durations.DAYS) {
             return (to.getTime() - from.getTime()) / 1000 / 60 / 60 / 24
         } else {
-             
             throw new Error(`unexpected duration ${duration}`)
         }
     },
