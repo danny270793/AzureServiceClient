@@ -1,6 +1,6 @@
 import Axios, { AxiosResponse, AxiosRequestConfig } from 'axios'
-import LoginResponse from './responses/login-response'
-import CacheProvider from './providers/cache-provider'
+import LoginResponse from '../responses/login-response'
+import CacheProvider from '../providers/cache-provider'
 
 export default abstract class Base {
     private readonly subscriptionId: string

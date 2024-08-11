@@ -1,5 +1,5 @@
 import Base from './base'
-import Resource from './responses/resource'
+import Resource from '../responses/resource'
 
 type GetFoldersWithSizeCallback = (path: string, total: number) => Promise<void>
 

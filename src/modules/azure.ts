@@ -1,5 +1,5 @@
-import ResourceGroup from './responses/resource-group'
-import Resource from './responses/resource'
+import ResourceGroup from '../responses/resource-group'
+import Resource from '../responses/resource'
 import Base from './base'
 
 export default class Azure extends Base {
