@@ -1,0 +1,26 @@
+{
+  "name": "@danny270793/azureservicesclient",
+  "version": "1.0.0",
+  "description": "Library to interact con azure services",
+  "main": "./build/index.js",
+  "types": "build/index.d.ts",
+  "files": [
+    "build/**/*"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "levenshtein"
+  ],
+  "author": {
+    "name": "Danny Vaca",
+    "email": "danny270793@gmail.com",
+    "url": "https://danny270793.github.io/#/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danny270793/AzureServicesClient.git"
+  },
+  "license": "MIT"
+}
