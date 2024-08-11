@@ -23,7 +23,7 @@ export default {
         if (duration === Durations.DAYS) {
             return (to.getTime() - from.getTime()) / 1000 / 60 / 60 / 24
         } else {
-            // eslint-disable-next-line @typescript-eslint/restrict-template-expressions
+             
             throw new Error(`unexpected duration ${duration}`)
         }
     },
