@@ -15,7 +15,7 @@
         "build:force": "rm -r -f ./build && tsc",
         "start": "node ./build/index.js",
         "start:watch": "ts-node-dev --respawn ./src/index.ts",
-        "test": "node --test ./build/tests",
+        "test": "ts-node-dev ./tests/index.test.ts",
         "test:watch": "ts-node-dev --respawn ./tests/index.test.ts"
     },
     "keywords": [

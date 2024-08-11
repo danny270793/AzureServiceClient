@@ -1,5 +1,5 @@
+import dates from "../dates"
 import { describe, it } from "node:test";
-import dates from "./dates"
 import assert from "node:assert";
 
 export default describe('dates', () => {
