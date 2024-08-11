@@ -1,34 +1,36 @@
 {
-  "name": "@danny270793/azureservicesclient",
-  "version": "1.0.0",
-  "description": "Library to interact con azure services",
-  "main": "./build/index.js",
-  "types": "build/index.d.ts",
-  "files": [
-    "build/**/*"
-  ],
-  "scripts": {
-    "build": "tsc",
-    "build:force": "rm -r -f && tsc"
-  },
-  "keywords": [
-    "levenshtein"
-  ],
-  "author": {
-    "name": "Danny Vaca",
-    "email": "danny270793@gmail.com",
-    "url": "https://danny270793.github.io/#/"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/danny270793/AzureServicesClient.git"
-  },
-  "license": "MIT",
-  "devDependencies": {
-    "@types/node": "^22.2.0",
-    "typescript": "^5.5.4"
-  },
-  "dependencies": {
-    "axios": "^1.7.3"
-  }
+    "name": "@danny270793/azureservicesclient",
+    "version": "1.0.0",
+    "description": "Library to interact con azure services",
+    "main": "./build/index.js",
+    "types": "build/index.d.ts",
+    "files": [
+        "build/**/*"
+    ],
+    "scripts": {
+        "build": "tsc",
+        "build:force": "rm -r -f && tsc",
+        "format": "prettier ./ --write"
+    },
+    "keywords": [
+        "levenshtein"
+    ],
+    "author": {
+        "name": "Danny Vaca",
+        "email": "danny270793@gmail.com",
+        "url": "https://danny270793.github.io/#/"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/danny270793/AzureServicesClient.git"
+    },
+    "license": "MIT",
+    "devDependencies": {
+        "@types/node": "^22.2.0",
+        "prettier": "^3.3.3",
+        "typescript": "^5.5.4"
+    },
+    "dependencies": {
+        "axios": "^1.7.3"
+    }
 }
