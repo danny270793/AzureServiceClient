@@ -1,5 +1,4 @@
-import Dates, { Durations } from '../../dates'
-import Logger from '../../logger'
+import Dates, { Durations } from '../libraries/dates'
 import CacheProvider from './cache-provider'
 import * as Fs from 'node:fs'
 import * as Path from 'node:path'
@@ -80,7 +79,6 @@ export default class FileCacheProvider implements CacheProvider {
   }
 
   async write(key: string, payload: any): Promise<void> {
-    Logger.debug(`cache.write ${key}`)
     const cachedContent: CachedContent = {
       payload,
       cachedAt: new Date(),
@@ -91,7 +89,6 @@ export default class FileCacheProvider implements CacheProvider {
   }
 
   async read(key: string): Promise<any> {
-    Logger.debug(`cache.read ${key}`)
     const cachedContent: CachedContent = this.cachedData[key]
     return await Promise.resolve(cachedContent.payload)
   }
