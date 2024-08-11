@@ -1,6 +1,6 @@
 {
     "name": "@danny270793/azureservicesclient",
-    "version": "1.0.0",
+    "version": "1.0.4",
     "description": "Library to interact con azure services",
     "main": "./build/index.js",
     "types": "./build/index.d.ts",
