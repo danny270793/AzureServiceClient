@@ -1,4 +1,4 @@
-import ActivityRuns from "./activity-runs";
+import ActivityRuns, { ActivityRun } from "./activity-runs";
 import DataFlow from "./dataflow";
 import Dataset from "./dataset";
 import IntegrationRuntime from "./integration-runtime";
@@ -16,6 +16,7 @@ import Trigger from "./trigger";
 
 export {
     ActivityRuns,
+    ActivityRun,
     DataFlow,
     Dataset,
     IntegrationRuntime,
