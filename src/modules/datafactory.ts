@@ -1,7 +1,7 @@
 import Axios, { AxiosResponse } from 'axios'
-import ActivityRuns, { ActivityRun } from './responses/activity-runs'
-import LoginResponse from './responses/login-response'
-import PipelineRuns, { PipelineRun } from './responses/pipeline-runs'
+import ActivityRuns, { ActivityRun } from '../responses/activity-runs'
+import LoginResponse from '../responses/login-response'
+import PipelineRuns, { PipelineRun } from '../responses/pipeline-runs'
 
 export default class DataFactory {
     private readonly subscriptionId: string
