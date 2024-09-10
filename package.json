@@ -13,6 +13,7 @@
         "lint:fix": "eslint . --fix",
         "build": "tsc",
         "build:force": "rm -r -f ./build && tsc",
+        "example:watch": "ts-node-dev --env-file .env --respawn ./example/index.ts",
         "start": "node ./build/index.js",
         "start:watch": "ts-node-dev --respawn ./src/index.ts",
         "test": "ts-node-dev ./tests/index.test.ts",
