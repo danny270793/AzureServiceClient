@@ -7,6 +7,24 @@ export default class Azure extends Base {
         return 'https://management.azure.com/'
     }
 
+    async getVirtualMachine(resourceGroupName: string, name: string): Promise<any> {
+        return (
+            await this.get(
+                `subscriptions/${this.getSubscriptionId()}/resourceGroups/${resourceGroupName}/providers/Microsoft.Compute/virtualMachines/${name}`,
+                { 'api-version': '2024-07-01' },
+            )
+        )
+    }
+
+    async getVirtualMachineInstanceView(resourceGroupName: string, name: string): Promise<any> {
+        return (
+            await this.get(
+                `subscriptions/${this.getSubscriptionId()}/resourceGroups/${resourceGroupName}/providers/Microsoft.Compute/virtualMachines/${name}/instanceView`,
+                { 'api-version': '2024-07-01' },
+            )
+        )
+    }
+
     async getResourceByResourceGroup(
         resourceGroupName: string,
     ): Promise<Resource[]> {
