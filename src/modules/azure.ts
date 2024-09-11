@@ -1,6 +1,8 @@
 import ResourceGroup from '../responses/resource-group'
 import Resource from '../responses/resource'
 import Base from './base'
+import Kubernetes from '../responses/kubernetes'
+import virtualMachineInstanceView from '../responses/vm-instance-view'
 
 export default class Azure extends Base {
     getLoginResource(): string {
@@ -16,10 +18,19 @@ export default class Azure extends Base {
         )
     }
 
-    async getVirtualMachineInstanceView(resourceGroupName: string, name: string): Promise<any> {
+    async getVirtualMachineInstanceView(resourceGroupName: string, name: string): Promise<virtualMachineInstanceView> {
         return (
             await this.get(
                 `subscriptions/${this.getSubscriptionId()}/resourceGroups/${resourceGroupName}/providers/Microsoft.Compute/virtualMachines/${name}/instanceView`,
+                { 'api-version': '2024-07-01' },
+            )
+        )
+    }
+
+    async getKubernetes(resourceGroupName: string, name: string): Promise<Kubernetes> {
+        return (
+            await this.get(
+                `subscriptions/${this.getSubscriptionId()}/resourceGroups/${resourceGroupName}/providers/Microsoft.ContainerService/managedClusters/${name}`,
                 { 'api-version': '2024-07-01' },
             )
         )
